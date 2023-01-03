@@ -1,6 +1,8 @@
-************************************************************************************************************************************************
-*****************************************************Welcome TO My AirlineBookingSystemProject**************************************************
-************************************************************************************************************************************************
+<pre>
+************************************************************************************************************************<br>
+                             Welcome TO My Airline Ticket Booking System Project<br>
+************************************************************************************************************************<br>
+
 
 Brief about the project:-
 A full stack Java project with attractive user interface and of several functionality based on Java Swing.
@@ -34,3 +36,4 @@ Step 3: Select that downloaded mysqlconnector JAR file and open it.
 Step 4: All done finally run the program.
 
 Thank You!
+</pre>
