@@ -31,7 +31,7 @@ Note : If you face problem in JDBC connection use the given mysqlconnector jar.
 
 How to add Jar file ?
 Step 1: Download myysqlconnector from repository.
-Step 2: Open NetBeans and select the project go to project particular liberay left click on that select add JAR.
+Step 2: Open NetBeans and select the project go to project particular library left click on that select add JAR.
 Step 3: Select that downloaded mysqlconnector JAR file and open it.
 Step 4: All done finally run the program.
 
