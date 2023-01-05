@@ -23,11 +23,11 @@ Step 1: Go to file menu then import project from ZIP and choose the project from
 Step 2: Import the AirLineSys_DB_Backup.sql in your System database.
 Step 3.Add JAR Files which is in repository.
 Note : Be sure add the both jar files before going for step 4. 
-Step 4: Go to class file with name DatabaseUserAndPassword.java here default user and password is "root" you need to type your  
-Step 4: Now run the program in Netbean.
-Step 5: A user login page will open use below user id and passward as defaut.
+Step 4: Go to class file with name DatabaseUserAndPassword.java here default user and password is "root" you need to type your mysql usernamme and password.  
+Step 5: Now run the program in Netbean.
+Step 6: A user login page will open use below user id and passward as defaut.
    User: avi Password: 1234
-Step 5: Now you can access the AirlineBookingSystem.
+Step 7: Now you can access the AirlineBookingSystem.
 
 That's it!!!
 
