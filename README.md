@@ -41,7 +41,7 @@ Step 3: Select that downloaded mysqlconnector JAR file and open it.
 Step 4: All done finally run the program.
 
 How to add JCalendar Jar file ?
-Step 1: Download JCalander.jar from repository.
+Step 1: Download JCalandar.jar from repository.
 Step 2: Extract it.
 Step 3: Open NetBeans go to tools>palette>Swing/AWT Components a dialog box will appear select swing control then select add from JAR choose from extrcted Jcalander JAR folder go to lib folder inside lib choose Jcalandar jar then click next select all component(like JDateChooser ,JCalandar.. etc) and then next select swing controler and finally click on finish.
 Step 4: Select that downloaded mysqlconnector JAR file and open it.
