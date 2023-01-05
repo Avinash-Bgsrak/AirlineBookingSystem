@@ -153,7 +153,7 @@ public class PrintFormat extends javax.swing.JFrame {
      }
     
     
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
@@ -383,7 +383,7 @@ public class PrintFormat extends javax.swing.JFrame {
 
         pack();
         setLocationRelativeTo(null);
-    }// </editor-fold>                        
+    }// </editor-fold>//GEN-END:initComponents
 
     /**
      * @param args the command line arguments
@@ -421,7 +421,7 @@ public class PrintFormat extends javax.swing.JFrame {
         });
     }
 
-    // Variables declaration - do not modify                     
+    // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -460,5 +460,5 @@ public class PrintFormat extends javax.swing.JFrame {
     private javax.swing.JLabel txtseatno2;
     private javax.swing.JLabel txtseqno;
     private javax.swing.JLabel txtsource;
-    // End of variables declaration                   
+    // End of variables declaration//GEN-END:variables
 }

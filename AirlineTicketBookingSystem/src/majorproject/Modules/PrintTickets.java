@@ -49,7 +49,7 @@ public class PrintTickets extends javax.swing.JInternalFrame {
     @SuppressWarnings("unchecked")
     
   
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
@@ -144,9 +144,9 @@ public class PrintTickets extends javax.swing.JInternalFrame {
         );
 
         pack();
-    }// </editor-fold>                        
+    }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
           String ticketno = tktno.getText();
           
@@ -198,14 +198,14 @@ public class PrintTickets extends javax.swing.JInternalFrame {
             Logger.getLogger(PrintTickets.class.getName()).log(Level.SEVERE, null, ex);
         }
         
-    }                                        
+    }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
         this.setVisible(false);
-    }                                        
+    }//GEN-LAST:event_jButton3ActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
           
         
@@ -248,10 +248,10 @@ public class PrintTickets extends javax.swing.JInternalFrame {
         
         
         
-    }                                        
+    }//GEN-LAST:event_jButton2ActionPerformed
 
 
-    // Variables declaration - do not modify                     
+    // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
@@ -270,5 +270,5 @@ public class PrintTickets extends javax.swing.JInternalFrame {
     private javax.swing.JLabel txtfirstname;
     private javax.swing.JLabel txtlastname;
     private javax.swing.JLabel txtsource;
-    // End of variables declaration                   
+    // End of variables declaration//GEN-END:variables
 }
