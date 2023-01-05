@@ -30,6 +30,9 @@ public class BookTickets extends javax.swing.JInternalFrame {
     /**
      * Creates new form Tickets
      */
+    DatabaseUserAndPassword obj = new DatabaseUserAndPassword();
+    String user = obj.user;
+    String pass = obj.pass;
     public BookTickets() {
         initComponents();
         autoincreament();
@@ -50,7 +53,7 @@ public class BookTickets extends javax.swing.JInternalFrame {
         
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost/MyAirlineSystem","root","0326@Mysql");
+            con = DriverManager.getConnection("jdbc:mysql://localhost/MyAirlineSystem",user,pass);
 
            Statement s = con.createStatement();
            ResultSet rs =s.executeQuery("select MAX(ticketno) from Tickets");
@@ -82,7 +85,7 @@ public class BookTickets extends javax.swing.JInternalFrame {
     
     
     
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
     private void initComponents() {
 
         jPanel3 = new javax.swing.JPanel();
@@ -344,13 +347,13 @@ public class BookTickets extends javax.swing.JInternalFrame {
         getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 790, 470));
 
         pack();
-    }// </editor-fold>//GEN-END:initComponents
+    }// </editor-fold>                        
 
-    private void txtsourceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtsourceActionPerformed
+    private void txtsourceActionPerformed(java.awt.event.ActionEvent evt) {                                          
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtsourceActionPerformed
+    }                                         
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
        
             String source = txtsource.getSelectedItem().toString();
             String destination =txtdestination.getSelectedItem().toString();
@@ -359,7 +362,7 @@ public class BookTickets extends javax.swing.JInternalFrame {
             
             
             Class.forName("com.mysql.cj.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost/MyAirlineSystem","root","0326@Mysql");
+            con = DriverManager.getConnection("jdbc:mysql://localhost/MyAirlineSystem",user,pass);
             
             
             pt = con.prepareStatement("select *from Flights where source=? and destination=?");
@@ -407,14 +410,14 @@ public class BookTickets extends javax.swing.JInternalFrame {
         
         
         
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }                                        
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         // TODO add your handling code here:
         this.setVisible(false);
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }                                        
 
-    private void bookbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bookbtnActionPerformed
+    private void bookbtnActionPerformed(java.awt.event.ActionEvent evt) {                                        
          // TODO add your handling code here:
         
         String ticketno = txtticketno.getText();
@@ -443,7 +446,7 @@ public class BookTickets extends javax.swing.JInternalFrame {
         try{
 
             Class.forName("com.mysql.cj.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost/MyAirlineSystem","root","0326@Mysql");
+            con = DriverManager.getConnection("jdbc:mysql://localhost/MyAirlineSystem",user,pass);
 
             pt = con.prepareStatement("insert into Tickets (ticketno,flightno,flightname,class,source,destination,arrival,departure,date,price,seats,custid,firstname,lastname) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
 
@@ -477,9 +480,9 @@ public class BookTickets extends javax.swing.JInternalFrame {
         
         
         
-    }//GEN-LAST:event_bookbtnActionPerformed
+    }                                       
 
-    private void searchcustbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchcustbtnActionPerformed
+    private void searchcustbtnActionPerformed(java.awt.event.ActionEvent evt) {                                              
         // TODO add your handling code here:
         
          String id = txtcustid.getText();
@@ -488,7 +491,7 @@ public class BookTickets extends javax.swing.JInternalFrame {
             try{
                 
                 Class.forName("com.mysql.cj.jdbc.Driver");
-                con = DriverManager.getConnection("jdbc:mysql://localhost/MyAirlineSystem","root","0326@Mysql");
+                con = DriverManager.getConnection("jdbc:mysql://localhost/MyAirlineSystem",user,pass);
                
                 
                 pt = con.prepareStatement("select *from Customers where custid =?");
@@ -524,9 +527,9 @@ public class BookTickets extends javax.swing.JInternalFrame {
         
         
         
-    }//GEN-LAST:event_searchcustbtnActionPerformed
+    }                                             
 
-    private void jTable1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable1MouseClicked
+    private void jTable1MouseClicked(java.awt.event.MouseEvent evt) {                                     
         // TODO add your handling code here:
         DefaultTableModel table  = (DefaultTableModel)jTable1.getModel();
         
@@ -539,9 +542,9 @@ public class BookTickets extends javax.swing.JInternalFrame {
         txtprice.setText(table.getValueAt(index, 7).toString());
         
         
-    }//GEN-LAST:event_jTable1MouseClicked
+    }                                    
 
-    private void txtseatStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_txtseatStateChanged
+    private void txtseatStateChanged(javax.swing.event.ChangeEvent evt) {                                     
         // TODO add your handling code here:
         
         int price = Integer.parseInt(txtprice.getText());
@@ -552,14 +555,14 @@ public class BookTickets extends javax.swing.JInternalFrame {
         txttotal.setText(String.valueOf(total));
         
         
-    }//GEN-LAST:event_txtseatStateChanged
+    }                                    
 
-    private void txtcustidActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtcustidActionPerformed
+    private void txtcustidActionPerformed(java.awt.event.ActionEvent evt) {                                          
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtcustidActionPerformed
+    }                                         
 
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
+    // Variables declaration - do not modify                     
     private javax.swing.JButton bookbtn;
     private javax.swing.JLabel firstnames;
     private javax.swing.JButton jButton1;
@@ -601,5 +604,5 @@ public class BookTickets extends javax.swing.JInternalFrame {
     private javax.swing.JComboBox<String> txtsource;
     private javax.swing.JLabel txtticketno;
     private javax.swing.JLabel txttotal;
-    // End of variables declaration//GEN-END:variables
+    // End of variables declaration                   
 }
