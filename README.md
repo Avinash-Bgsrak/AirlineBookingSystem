@@ -16,11 +16,14 @@ Following are the functionality consists inside this project:
 6.Add user :-> Here admin can add the users to give him the access for using AirlineBookingSystem.  
 7.Add Flight :-> Here admin can add the flights with flight details.
 
+
 How to open project in NetBeans ?
-Step 1: Go to file menu then import project from ZIP.
+First extract the downloaded Zip file.
+Step 1: Go to file menu then import project from ZIP and choose the project from extracted folder.
 Step 2: Import the AirLineSys_DB_Backup.sql in your System database.
 Step 3.Add JAR Files which is in repository.
 Note : Be sure add the both jar files before going for step 4. 
+Step 4: Go to class file with name DatabaseUserAndPassword.java here default user and password is "root" you need to type your  
 Step 4: Now run the program in Netbean.
 Step 5: A user login page will open use below user id and passward as defaut.
    User: avi Password: 1234
