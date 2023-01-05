@@ -23,6 +23,10 @@ public class PrintFormat extends javax.swing.JFrame {
     /**
      * Creates new form PrintTickets
      */
+    DatabaseUserAndPassword obj = new DatabaseUserAndPassword();
+    String user = obj.user;
+    String pass = obj.pass;
+    
     
     PrintTickets ptkt = new  PrintTickets();
              String tk  =  ptkt.ticket;
@@ -51,7 +55,7 @@ public class PrintFormat extends javax.swing.JFrame {
         
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost/MyAirlineSystem","root","0326@Mysql");
+            con = DriverManager.getConnection("jdbc:mysql://localhost/MyAirlineSystem",user,pass);
 
            Statement s = con.createStatement();
            ResultSet rs =s.executeQuery("select MAX(ticketno) from Tickets");
@@ -95,7 +99,7 @@ public class PrintFormat extends javax.swing.JFrame {
           try{
                 
                 Class.forName("com.mysql.cj.jdbc.Driver");
-                con = DriverManager.getConnection("jdbc:mysql://localhost/MyAirlineSystem","root","0326@Mysql");
+                con = DriverManager.getConnection("jdbc:mysql://localhost/MyAirlineSystem",user,pass);
                
                 
                 pt = con.prepareStatement("select *from Tickets where ticketno = ?");
@@ -149,7 +153,7 @@ public class PrintFormat extends javax.swing.JFrame {
      }
     
     
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
@@ -379,7 +383,7 @@ public class PrintFormat extends javax.swing.JFrame {
 
         pack();
         setLocationRelativeTo(null);
-    }// </editor-fold>//GEN-END:initComponents
+    }// </editor-fold>                        
 
     /**
      * @param args the command line arguments
@@ -417,7 +421,7 @@ public class PrintFormat extends javax.swing.JFrame {
         });
     }
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
+    // Variables declaration - do not modify                     
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -456,5 +460,5 @@ public class PrintFormat extends javax.swing.JFrame {
     private javax.swing.JLabel txtseatno2;
     private javax.swing.JLabel txtseqno;
     private javax.swing.JLabel txtsource;
-    // End of variables declaration//GEN-END:variables
+    // End of variables declaration                   
 }
