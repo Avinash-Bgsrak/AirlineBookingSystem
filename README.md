@@ -44,5 +44,15 @@ Step 3: Open NetBeans go to tools>palette>Swing/AWT Components a dialog box will
 Step 4: Select that downloaded mysqlconnector JAR file and open it.
 Step 5: All done finally run the program.
 
+How to add AirLineSys_DB_Backup.sql in your system.
+Step 1. Open mysql command line using your password.
+Step 2. Create database with name MyAirlineSystem.
+Step 3. Now write the following commands one by one :
+  use database MyAirlineSystem
+  source file_path(like C:\Users\Avinash Kumar\Downloads\Compressed\....AirLineSys_DB_Backup.sql;
+  
+ then press enter
+ Your sql table will be inserted.
+
 Thank You!
 </pre>
