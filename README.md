@@ -59,3 +59,22 @@ Step 3. Now write the following commands one by one :
 
 Thank You!
 </pre>
+
+
+<h1>Screensots</h1>
+
+
+![login](https://user-images.githubusercontent.com/120415611/212031547-357cf6aa-119d-44df-b205-5c839c7b48b7.png)
+
+![Dashboard](https://user-images.githubusercontent.com/120415611/212031773-d6572cb6-6011-49bf-98e1-4237ff7f6647.png)
+
+![addcust](https://user-images.githubusercontent.com/120415611/212032055-d09192c3-7565-4ab0-a9e7-489b4e0e0400.png)
+
+![addfilght](https://user-images.githubusercontent.com/120415611/212032144-5e87088a-6bc2-499c-953b-bd45d0e68acd.png)
+
+![searchcust](https://user-images.githubusercontent.com/120415611/212032227-6d9058eb-bff2-4626-9d81-2aeee36a5f17.png)
+
+![printtkt](https://user-images.githubusercontent.com/120415611/212032303-db71b7f4-bb94-4237-9ee7-09b7332a6c13.png)
+
+![tkt](https://user-images.githubusercontent.com/120415611/212034132-1dbfae81-9087-44e8-a2c6-26e577d5e72d.png)
+
