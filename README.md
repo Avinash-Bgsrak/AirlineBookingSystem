@@ -76,5 +76,6 @@ Thank You!
 
 ![printtkt](https://user-images.githubusercontent.com/120415611/212032303-db71b7f4-bb94-4237-9ee7-09b7332a6c13.png)
 
-![tkt](https://user-images.githubusercontent.com/120415611/212034132-1dbfae81-9087-44e8-a2c6-26e577d5e72d.png)
+![Capture](https://user-images.githubusercontent.com/120415611/214411869-4b210099-9915-44ef-b3ee-8ced1db6e3ad.JPG)
+
 
